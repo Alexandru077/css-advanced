@@ -1,0 +1,33 @@
+.header {
+  height: $header-height;
+  background-color: #0D3268;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 24px;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  li {
+    margin-right: 60px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.header__button {
+  a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 36px;
+    background-color: white;
+    border-radius: 24px;
+  }
+}
