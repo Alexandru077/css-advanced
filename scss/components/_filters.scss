@@ -1,13 +1,14 @@
-.filter-box--blur {
+// "&" in selector inseamna "totul ceea ce-i mai sus"
+
+.filter-box--1 {
   &:hover {
     img {
       filter: blur(5px);
     }
   }
 }
-// "&" in selector inseamna "totul ceea ce-i mai sus"
 
-.filter-box--grayscale {
+.filter-box--2 {
   &:hover {
     img {
       filter: grayscale(100%);
@@ -15,7 +16,7 @@
   }
 }
 
-.filter-box--brightness {
+.filter-box--3 {
   &:hover {
     img {
       filter: brightness(0.4);
@@ -23,7 +24,7 @@
   }
 }
 
-.filter-box--contrast {
+.filter-box--4 {
   &:hover {
     img {
       filter: contrast(200%);
@@ -31,7 +32,7 @@
   }
 }
 
-.filter-box--rotate {
+.filter-box--5 {
   &:hover {
     img {
       filter: rotate(98deg);
@@ -39,10 +40,122 @@
   }
 }
 
-.filter-box--drop-shadow {
+.filter-box--6 {
   &:hover {
     img {
       filter: drop-shadow(7px 7px 2px red);
+    }
+  }
+}
+
+.filter-box--7 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--8 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--9 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--10 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--11 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--12 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--13 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--14 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--15 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--16 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--17 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--18 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--19 {
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+}
+
+.filter-box--20 {
+  &:hover {
+    img {
+      filter: blur(5px);
     }
   }
 }
