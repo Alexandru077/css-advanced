@@ -1,9 +1,9 @@
-.ratio-box {
+.ratio-box--16-9 {
   position: relative;
 
   &::before {
     content: '';
-    padding-bottom: 100%;
+    padding-top: 56.24%;
     display: block;
   }
   
