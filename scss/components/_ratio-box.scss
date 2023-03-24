@@ -1,9 +1,11 @@
-.ratio-box--16-9 {
+.ratio-box,
+.ratio-box--16-9,
+.ratio-box--4-3 {
   position: relative;
 
   &::before {
     content: '';
-    padding-top: 56.24%;
+    padding-top: 100%;
     display: block;
   }
   
@@ -17,8 +19,26 @@
   }
 }
 
-@include breakpoint((-webkit-min-device-pixel-ratio: 2) (min-resolution: 192dpi)) {
-  body {
-    background-color: green;
+.ratio-box--16-9 {
+  content: '';
+  padding-top: 56.25%;
+  display: block;
+}
+
+.ratio-box--4-3 {
+  content: '';
+  padding-top: 75%;
+  display: block;
+}
+
+.ratio-box--16-9 {
+  @include breakpoint($desktop) {
+    content: '16/9';
+  }
+}
+
+.ratio-box--4-3 {
+  @include breakpoint($tablet) {
+    content: '4/3';
   }
 }
