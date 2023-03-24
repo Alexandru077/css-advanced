@@ -1,13 +1,13 @@
 .header {
-  height: $header-height;
-  background-color: #0D3268;
+  background-color: #EF6039;
+  padding-top: 17px;
+  padding-bottom: 16px;
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding-top: 24px;
+  justify-content: space-between;
 }
 
 .main-menu {
