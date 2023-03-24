@@ -1,0 +1,27 @@
+.transform-action-area--1 {
+  &:hover {
+    .transform-element {
+      transform: scaleY(0.5);
+    }
+  }
+}
+
+.transform-action-area--2 {
+  &:hover {
+    .transform-element {
+      transform: rotate(45deg);
+      background-color: green;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.transform-element {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
