@@ -20,25 +20,17 @@
 }
 
 .ratio-box--16-9 {
-  content: '';
-  padding-top: 56.25%;
-  display: block;
-}
-
-.ratio-box--4-3 {
-  content: '';
-  padding-top: 75%;
-  display: block;
-}
-
-.ratio-box--16-9 {
-  @include breakpoint($desktop) {
-    content: '16/9';
+  &::before {
+    content: '';
+    padding-top: 56.25%;
+    display: block;
   }
 }
 
 .ratio-box--4-3 {
-  @include breakpoint($tablet) {
-    content: '4/3';
+  &::before {
+    content: '';
+    padding-top: 75%;
+    display: block;
   }
 }
