@@ -16,6 +16,7 @@
   &:hover {
     .transform-element {
       transform: scaleY(0.5);
+      background-color: aliceblue;
     }
   }
 }
@@ -34,7 +35,8 @@
 .transform-action-area--3 {
   &:hover {
     .transform-element {
-
+      transform: perspective(10px);
+      background-color: aqua;
     }
   }
 }
@@ -42,7 +44,8 @@
 .transform-action-area--4 {
   &:hover {
     .transform-element {
-      
+      transform: scaleX(0.7);
+      background-color: rgb(187, 128, 56);
     }
   }
 }
@@ -50,7 +53,8 @@
 .transform-action-area--5 {
   &:hover {
     .transform-element {
-      
+      transform: translate(-120px, -50%);
+      background-color: rgb(31, 122, 201);
     }
   }
 }
@@ -58,7 +62,8 @@
 .transform-action-area--6 {
   &:hover {
     .transform-element {
-      
+      transform: translate(120px, 50%);
+      background-color: rgb(3, 108, 92);
     }
   }
 }
@@ -66,7 +71,8 @@
 .transform-action-area--7 {
   &:hover {
     .transform-element {
-      
+      transform: translate(-50%);
+      background-color: blue;
     }
   }
 }
@@ -74,7 +80,8 @@
 .transform-action-area--8 {
   &:hover {
     .transform-element {
-      
+      transform: translate(50%);
+      background-color: red;
     }
   }
 }
@@ -82,7 +89,8 @@
 .transform-action-area--9 {
   &:hover {
     .transform-element {
-      
+      transform: rotateY(45deg);
+      background-color: orange;
     }
   }
 }
@@ -90,7 +98,8 @@
 .transform-action-area--10 {
   &:hover {
     .transform-element {
-      
+      transform: scale(0.5);
+      background-color: rgb(202, 0, 101);
     }
   }
 }
@@ -98,7 +107,8 @@
 .transform-action-area--11 {
   &:hover {
     .transform-element {
-      
+      transform: skew(-15deg, -7deg);
+      background-color: rgb(140, 0, 140);
     }
   }
 }
@@ -106,7 +116,8 @@
 .transform-action-area--12 {
   &:hover {
     .transform-element {
-      
+      transform: skew(15deg, 7deg);
+      background-color: rgb(140, 0, 140);
     }
   }
 }
@@ -114,7 +125,8 @@
 .transform-action-area--13 {
   &:hover {
     .transform-element {
-      
+      transform: rotateY(180deg);
+      background-color: #aeff00;
     }
   }
 }
@@ -122,7 +134,8 @@
 .transform-action-area--14 {
   &:hover {
     .transform-element {
-      
+      transform: scale(0.5);
+      background-color: #00ff62;
     }
   }
 }
@@ -130,7 +143,8 @@
 .transform-action-area--15 {
   &:hover {
     .transform-element {
-      
+      transform: scaleY(-1);
+      background-color: #0051ff;
     }
   }
 }
@@ -138,7 +152,8 @@
 .transform-action-area--16 {
   &:hover {
     .transform-element {
-      
+      transform: scale3d(2, 1.5, 0.3);
+      background-color: #6c78ff;
     }
   }
 }
@@ -146,7 +161,8 @@
 .transform-action-area--17 {
   &:hover {
     .transform-element {
-      
+      transform: rotateZ(20deg) scale(0.5);
+      background-color: #ff6a6a;
     }
   }
 }
@@ -154,7 +170,8 @@
 .transform-action-area--18 {
   &:hover {
     .transform-element {
-      
+      transform: rotate3d(1, 2, 3, -50deg);
+      background-color: #72b449;
     }
   }
 }
@@ -162,7 +179,8 @@
 .transform-action-area--19 {
   &:hover {
     .transform-element {
-      
+      transform: translateX(10px) rotate(10deg) translateY(-50px);
+      background-color: #04ff9b;
     }
   }
 }
@@ -170,7 +188,8 @@
 .transform-action-area--20 {
   &:hover {
     .transform-element {
-      
+      transform: translateY(10px) rotate(-10deg) translateX(50px);
+      background-color: #04ff9b;
     }
   }
 }

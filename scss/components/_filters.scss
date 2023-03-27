@@ -1,4 +1,8 @@
 // "&" in selector inseamna "totul ceea ce-i mai sus"
+.filter-box {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
 
 .filter-box--1 {
   &:hover {
