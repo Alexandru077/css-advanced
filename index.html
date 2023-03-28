@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="shortcut icon" type="x-icon" href="/images/tab-icon.png">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styleguide.css">
 </head>
@@ -81,6 +82,58 @@
         <div class="section__content">
           <div class="animation-area">
             <div class="animation-child"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="desandro--cube">
+        <div class="container">
+          <div class="section__content desandro__box">
+            Desandro Cube
+            <div class="scene__cube">
+              <div class="cube">
+                <div class="cube__face cube__face--front">FRONT</div>
+                <div class="cube__face cube__face--back">BACK</div>
+                <div class="cube__face cube__face--right">RIGHT</div>
+                <div class="cube__face cube__face--left">LEFT</div>
+                <div class="cube__face cube__face--top">TOP</div>
+                <div class="cube__face cube__face--bottom">BOTTOM</div>
+              </div>
+            </div>
+            <div class="button__cube--directions">
+              <form class="radio-group">
+                <label>
+                  <input class="l-radio" type="radio" name="rotate-cube-side" value="front" checked /><span>front</span>
+                </label>
+                <label>
+                  <input class="l-radio" type="radio" name="rotate-cube-side" value="right" /><span>right</span>
+                </label>
+                <label>
+                  <input class="l-radio" type="radio" name="rotate-cube-side" value="back" /><span>back</span>
+                </label>
+                <label>
+                  <input class="l-radio" type="radio" name="rotate-cube-side" value="left" /><span>left</span>
+                </label>
+                <label>
+                  <input class="l-radio" type="radio" name="rotate-cube-side" value="top" /><span>top</span>
+                </label>
+                <label>
+                  <input class="l-radio" type="radio" name="rotate-cube-side" value="bottom" /><span>bottom</span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="desandro--card">
+        <div class="container">
+          <div class="section__content desandro__box">
+            Desandro Card
+            <div class="scene__card">
+              <div class="card">
+                <div class="card__face card__face--front">FRONT</div>
+                <div class="card__face card__face--back">BACK</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -189,26 +242,6 @@
               <div class="col-4 transform-action-area transform-action-area--20">
                 <div class="transform-element">
                   Transform action area 20
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="responsive-image">
-        <div class="container">
-          <h2 class="section__content">Responsive Image</h2>
-        </div>
-        <div class="section__content">
-          <div class="container">
-            <div class="row">
-              <div class="col-3">
-                <div class="ratio-box--16-9">
-                  <img
-                    srcset="http://unsplash.it/600/600 600w, http://unsplash.it/1200/1200 1200w "
-                    sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
-                    src="http://unsplash.it/1200/1200"
-                    alt=""/>
                 </div>
               </div>
             </div>
@@ -427,4 +460,5 @@
     </content>
   </main>
 </body>
+<script src="/js/main.js"></script>
 </html>
