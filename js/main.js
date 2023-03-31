@@ -1,3 +1,5 @@
+jQuery('.advanced-select').select2();
+
 // Desandro Carousel
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
@@ -15,6 +17,7 @@ function rotateCarousel() {
   carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
     rotateFn + '(' + angle + 'deg)';
 }
+
 
 var prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener( 'click', function() {
