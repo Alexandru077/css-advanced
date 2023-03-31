@@ -1,9 +1,9 @@
 .main-content {
   display: flex;
+  background-color: rgb(164, 164, 164);
 }
 
 .content-area {
-  background-color: green;
   flex-grow: 1;
   overflow-y: auto;
 }

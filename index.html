@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CSS Advanced</title>
+  <link rel="shortcut icon" type="x-icon" href="/images/tab-icon.png">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styleguide.css">
 </head>
@@ -47,37 +48,252 @@
           <a href="#background-box">Pagina principala</a>
         </li>
         <li class="btn__aside--2">
-          <a href="#people-layout">About</a>
+          <a href="#desandro__carousel">Desandro Carousel</a>
         </li>
         <li class="btn__aside--3">
-          <a href="#filters">Team</a>
+          <a href="#desandro__cube">Desandro Cube</a>
         </li>
         <li class="btn__aside--4">
-          <a href="#filters">News</a>
+          <a href="#desandro__card">Desandro Card</a>
         </li>
         <li class="btn__aside--5">
-          <a href="#filters">CTA</a>
+          <a href="#transform">Transform</a>
         </li>
         <li class="btn__aside--6">
-          <a href="#filters">Contact</a>
+          <a href="#filters">Filters</a>
         </li>
       </ul>
     </aside>
     <content class="content-area">
-      <div class="section" id="responsive-image">
+      <div class="section" id="transition">
         <div class="container">
-          <h2 class="section__content">Responsive Image</h2>
+        </div>
+        <div class="section__content">
+          <div class="transition-area">
+            <div class="car--1"><div class="light_beam"></div><div class="side_mirror"></div><span><b></b><i></i></span></div>
+            <div class="car--2"><div class="light_beam"></div><div class="side_mirror"></div><span><b></b><i></i></span></div>
+            <div class="car--3"><div class="light_beam"></div><div class="side_mirror"></div><span><b></b><i></i></span></div>
+            <div class="car--4"><div class="light_beam"></div><div class="side_mirror"></div><span><b></b><i></i></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="animation">
+        <div class="container">
+          <h2 class="section__content">Animation (hover to apply)</h2>
+        </div>
+        <div class="section__content">
+          <div class="animation-area">
+            <div class="animation-child"></div>
+          </div>
+        </div>
+      </div>
+      Desandro Carousel
+      <div class="section" id="desandro__carousel">
+        <div class="container">
+          <div class="section__content carousel-box">
+            <div class="scene__carousel">
+              <div class="carousel">
+                <div class="carousel__cell">1</div>
+                <div class="carousel__cell">2</div>
+                <div class="carousel__cell">3</div>
+                <div class="carousel__cell">4</div>
+                <div class="carousel__cell">5</div>
+                <div class="carousel__cell">6</div>
+                <div class="carousel__cell">7</div>
+                <div class="carousel__cell">8</div>
+                <div class="carousel__cell">9</div>
+                <div class="carousel__cell">10</div>
+                <div class="carousel__cell">11</div>
+                <div class="carousel__cell">12</div>
+                <div class="carousel__cell">13</div>
+                <div class="carousel__cell">14</div>
+                <div class="carousel__cell">15</div>
+              </div>
+            </div>
+            <div class="carousel__options">
+              <div>
+                <label>
+                  <input class="cells-range" type="range" min="3" max="15" value="9">
+                </label>
+              </div>
+              <div>
+                <button class="previous-button">Previous</button>
+                <button class="next-button">Next</button>
+              </div>
+              <div>
+                Orientation:
+                <div>
+                  <label>
+                    <input type="radio" name="orientation" value="horizontal" checked>
+                    Horizontal
+                  </label>
+                  <label>
+                    <input type="radio" name="orientation" value="vertical">
+                    Vertical
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="desandro__cube">
+        <div class="container">
+          <div class="section__content desandro__box">
+            Desandro Cube
+            <div class="scene__cube">
+              <div class="cube">
+                <div class="cube__face cube__face--front">FRONT</div>
+                <div class="cube__face cube__face--back">BACK</div>
+                <div class="cube__face cube__face--right">RIGHT</div>
+                <div class="cube__face cube__face--left">LEFT</div>
+                <div class="cube__face cube__face--top">TOP</div>
+                <div class="cube__face cube__face--bottom">BOTTOM</div>
+              </div>
+            </div>
+            <div class="button__cube--directions">
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="front" checked />Front
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="right" />Right
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="back" />Back
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="left" />Left
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="top" />Top
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="bottom" />Bottom
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="desandro__card">
+        <div class="container">
+          <div class="section__content desandro__box">
+            Desandro Card
+            <div class="scene__card">
+              <div class="card">
+                <div class="card__face card__face--front">FRONT</div>
+                <div class="card__face card__face--back">BACK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="transform">
+        <div class="container">
+          <h2 class="section__content">Transform</h2>
         </div>
         <div class="section__content">
           <div class="container">
             <div class="row">
-              <div class="col-3">
-                <div class="ratio-box--16-9">
-                  <img
-                    srcset="http://unsplash.it/600/600 600w, http://unsplash.it/1200/1200 1200w "
-                    sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
-                    src="http://unsplash.it/1200/1200"
-                    alt=""/>
+              <div class="col-4 transform-action-area transform-action-area--1">
+                <div class="transform-element">
+                  Transform action area 1
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--2">
+                <div class="transform-element">
+                  Transform action area 2
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--3">
+                <div class="transform-element">
+                  Transform action area 3
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--4">
+                <div class="transform-element">
+                  Transform action area 4
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--5">
+                <div class="transform-element">
+                  Transform action area 5
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--6">
+                <div class="transform-element">
+                  Transform action area 6
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--7">
+                <div class="transform-element">
+                  Transform action area 7
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--8">
+                <div class="transform-element">
+                  Transform action area 8
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--9">
+                <div class="transform-element">
+                  Transform action area 9
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--10">
+                <div class="transform-element">
+                  Transform action area 10
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--11">
+                <div class="transform-element">
+                  Transform action area 11
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--12">
+                <div class="transform-element">
+                  Transform action area 12
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--13">
+                <div class="transform-element">
+                  Transform action area 13
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--14">
+                <div class="transform-element">
+                  Transform action area 14
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--15">
+                <div class="transform-element">
+                  Transform action area 15
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--16">
+                <div class="transform-element">
+                  Transform action area 16
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--17">
+                <div class="transform-element">
+                  Transform action area 17
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--18">
+                <div class="transform-element">
+                  Transform action area 18
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--19">
+                <div class="transform-element">
+                  Transform action area 19
+                </div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--20">
+                <div class="transform-element">
+                  Transform action area 20
                 </div>
               </div>
             </div>
@@ -296,4 +512,5 @@
     </content>
   </main>
 </body>
+<script src="/js/main.js"></script>
 </html>

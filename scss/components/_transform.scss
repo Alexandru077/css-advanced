@@ -1,0 +1,379 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body { 
+  font-family: sans-serif;
+}
+
+.desandro__box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+// Desandro Carousel
+.carousel-box {
+  text-align: center;
+}
+
+.scene__carousel {
+  border: 1px solid #CCC;
+  margin: 40px 0;
+  position: relative;
+  width: 210px;
+  height: 140px;
+  margin: 80px auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+}
+
+.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+2) { background: hsla( 40, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+3) { background: hsla( 80, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+4) { background: hsla(120, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+5) { background: hsla(160, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+6) { background: hsla(200, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+7) { background: hsla(240, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); }
+.carousel__cell:nth-child(9n+0) { background: hsla(320, 100%, 50%, 0.8); }
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
+.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
+.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+
+
+
+.carousel-options {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: hsla(0, 0%, 100%, 0.8);
+}
+
+
+// Desandro Cube
+
+
+.scene__cube {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  perspective: 400px;
+  background: rgb(11, 113, 134);
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+.cube.show-front  { transform: translateZ(-100px) rotateY(0deg); }
+.cube.show-right  { transform: translateZ(-100px) rotateY(-90deg); }
+.cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-100px) rotateY(90deg); }
+.cube.show-top    { transform: translateZ(-100px) rotateX(-90deg); }
+.cube.show-bottom { transform: translateZ(-100px) rotateX(90deg); }
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.cube__face--front  { background: hsla(  0, 100%, 50%, 0.7); }
+.cube__face--right  { background: hsla( 60, 100%, 50%, 0.7); }
+.cube__face--back   { background: hsla(120, 100%, 50%, 0.7); }
+.cube__face--left   { background: hsla(180, 100%, 50%, 0.7); }
+.cube__face--top    { background: hsla(240, 100%, 50%, 0.7); }
+.cube__face--bottom { background: hsla(300, 100%, 50%, 0.7); }
+
+.cube__face--front  { transform: rotateY(0deg) translateZ(100px); }
+.cube__face--right  { transform: rotateY(90deg) translateZ(100px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube__face--top    { transform: rotateX(90deg) translateZ(100px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+label { 
+  margin-right: 10px;
+}
+
+// Desandro Card
+.scene__card {
+  width: 200px;
+  height: 260px;
+  border: 5px solid black;
+  perspective: 600px;
+  background-color: #40ff00;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: red;
+  color: rgb(255, 251, 0);
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+  color: rgb(255, 251, 0);
+}
+
+
+
+// 20 transform box
+.transform-action-area {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.transform-element {
+  width: 100%;
+  height: 300px;
+  background-color: #9d4cc3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transform-action-area--1 {
+  &:hover {
+    .transform-element {
+      transform: scaleY(0.5);
+      background-color: aliceblue;
+    }
+  }
+}
+
+.transform-action-area--2 {
+  &:hover {
+    .transform-element {
+      transform: rotate(45deg);
+      background-color: green;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.transform-action-area--3 {
+  &:hover {
+    .transform-element {
+      transform: perspective(10px);
+      background-color: aqua;
+    }
+  }
+}
+
+.transform-action-area--4 {
+  &:hover {
+    .transform-element {
+      transform: scaleX(0.7);
+      background-color: rgb(187, 128, 56);
+    }
+  }
+}
+
+.transform-action-area--5 {
+  &:hover {
+    .transform-element {
+      transform: translate(-120px, -50%);
+      background-color: rgb(31, 122, 201);
+    }
+  }
+}
+
+.transform-action-area--6 {
+  &:hover {
+    .transform-element {
+      transform: translate(120px, 50%);
+      background-color: rgb(3, 108, 92);
+    }
+  }
+}
+
+.transform-action-area--7 {
+  &:hover {
+    .transform-element {
+      transform: translate(-50%);
+      background-color: blue;
+    }
+  }
+}
+
+.transform-action-area--8 {
+  &:hover {
+    .transform-element {
+      transform: translate(50%);
+      background-color: red;
+    }
+  }
+}
+
+.transform-action-area--9 {
+  &:hover {
+    .transform-element {
+      transform: rotateY(45deg);
+      background-color: orange;
+    }
+  }
+}
+
+.transform-action-area--10 {
+  &:hover {
+    .transform-element {
+      transform: scale(0.5);
+      background-color: rgb(202, 0, 101);
+    }
+  }
+}
+
+.transform-action-area--11 {
+  &:hover {
+    .transform-element {
+      transform: skew(-15deg, -7deg);
+      background-color: rgb(140, 0, 140);
+    }
+  }
+}
+
+.transform-action-area--12 {
+  &:hover {
+    .transform-element {
+      transform: skew(15deg, 7deg);
+      background-color: rgb(140, 0, 140);
+    }
+  }
+}
+
+.transform-action-area--13 {
+  &:hover {
+    .transform-element {
+      transform: rotateY(180deg);
+      background-color: #aeff00;
+    }
+  }
+}
+
+.transform-action-area--14 {
+  &:hover {
+    .transform-element {
+      transform: scale(0.5);
+      background-color: #00ff62;
+    }
+  }
+}
+
+.transform-action-area--15 {
+  &:hover {
+    .transform-element {
+      transform: scaleY(-1);
+      background-color: #0051ff;
+    }
+  }
+}
+
+.transform-action-area--16 {
+  &:hover {
+    .transform-element {
+      transform: scale3d(2, 1.5, 0.3);
+      background-color: #6c78ff;
+    }
+  }
+}
+
+.transform-action-area--17 {
+  &:hover {
+    .transform-element {
+      transform: rotateZ(20deg) scale(0.5);
+      background-color: #ff6a6a;
+    }
+  }
+}
+
+.transform-action-area--18 {
+  &:hover {
+    .transform-element {
+      transform: rotate3d(1, 2, 3, -50deg);
+      background-color: #72b449;
+    }
+  }
+}
+
+.transform-action-area--19 {
+  &:hover {
+    .transform-element {
+      transform: translateX(10px) rotate(10deg) translateY(-50px);
+      background-color: #04ff9b;
+    }
+  }
+}
+
+.transform-action-area--20 {
+  &:hover {
+    .transform-element {
+      transform: translateY(10px) rotate(-10deg) translateX(50px);
+      background-color: #04ff9b;
+    }
+  }
+}
