@@ -1,9 +1,18 @@
 .main-content {
   display: flex;
-  background-color: rgb(164, 164, 164);
+  height: calc(100vh   - $header-height);
 }
 
 .content-area {
-  flex-grow: 1;
+  width: calc(100% - #{$sidebar-width});
   overflow-y: auto;
+  position: relative;
+}
+
+.main-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
