@@ -1,5 +1,7 @@
 jQuery('.advanced-select').select2();
 
+
+// ------------------------------------------------------
 // Desandro Carousel
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
@@ -76,11 +78,11 @@ function onOrientationChange() {
 
 // set initials
 onOrientationChange();
+// ------------------------------------------------------
 
 
 
-
-
+// ------------------------------------------------------
 // Desandro Cube
 var cube = document.querySelector('.cube');
 var radioGroup = document.querySelector('.radio-group');
@@ -99,13 +101,14 @@ function changeSide() {
 changeSide();
 
 radioGroup.addEventListener( 'change', changeSide );
+// ------------------------------------------------------
 
 
 
-
-
+// ------------------------------------------------------
 // Desandro Card
 var card = document.querySelector('.card');
 card.addEventListener( 'click', function() {
   card.classList.toggle('is-flipped');
 });
+// ------------------------------------------------------
