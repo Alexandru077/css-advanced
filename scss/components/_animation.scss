@@ -21,7 +21,7 @@
   animation-iteration-count: infinite;
 
   
-  .pacman__eye {
+  &__eye {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -31,7 +31,7 @@
     background: #333333;
   }
   
-  .pacman__mouth {
+  &__mouth {
     background: #000;
     position: absolute;
     width: 100%;
