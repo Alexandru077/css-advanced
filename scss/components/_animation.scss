@@ -28,7 +28,7 @@
     border-radius: 50%;
     top: 20px;
     right: 40px;
-    background: #333333;
+    background: #000000;
   }
   
   &__mouth {
@@ -43,51 +43,7 @@
   }
 }
 
-@keyframes pacman {
-  0% {
-    left: 0;
-    top: 0;
-  }
-  10% {
-    left: calc(100% - 100px);
-    top: 0;
-    transform: rotate(90deg);
-  }
-  20% {
-    left: calc(100% - 100px);
-    top: 175px;
-    transform: rotate(180deg); 
-  }
-  30% {
-    left: 0;
-    top: 175px;
-    transform: rotate(90deg);
-  }
-  40% {
-    left: 0;
-    top: 350px;
-    transform: rotate(0deg);
-  }
-  60% {
-    left: calc(100% - 100px);
-    top: 350px;
-    transform: rotate(90deg);
-  }
-  70% {
-    left: calc(100% - 100px);
-    top: calc(100% - 130px);
-    transform: rotate(180deg);
-  }
-  80% {
-    left: 0;
-    top: calc(100% - 130px);
-    transform: rotate(360deg);
-  }
-  100% {
-    left: 0;
-    top: 0;
-  }
-}
+
 
 @keyframes eat {
   0% {
