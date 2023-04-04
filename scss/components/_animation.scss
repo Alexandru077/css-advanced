@@ -17,7 +17,7 @@
   position: relative;
   margin-top: 20px;
   animation: pacman;
-  animation-duration: 10s;
+  animation-duration: 9s;
   animation-iteration-count: infinite;
 
   
@@ -43,7 +43,51 @@
   }
 }
 
-
+@keyframes pacman {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  12% {
+    top: 0;
+    left: calc(100% - 100px);
+    transform: rotate(90deg);
+  }
+  24% {
+    top: 200px;
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+  }
+  36% {
+    top: 200px;
+    left: 0;
+    transform: rotate(90deg);
+  }
+  48% {
+    top: 400px;
+    left: 0;
+    transform: rotate(0deg);
+  }
+  70% {
+    top: 400px;
+    left: calc(100% - 100px);
+    transform: rotate(90deg);
+  }
+  82% {
+    top: 550px;
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+  }
+  90% {
+    top: 550px;
+    left: 0;
+    transform: rotate(360deg);
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
 
 @keyframes eat {
   0% {
