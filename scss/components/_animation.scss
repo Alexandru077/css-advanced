@@ -17,21 +17,22 @@
   position: relative;
   margin-top: 20px;
   animation: pacman;
-  animation-duration: 8s;
+  animation-duration: 9s;
   animation-iteration-count: infinite;
+  animation-delay: 2s;
 
   
-  .pacman__eye {
+  &__eye {
     position: absolute;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     top: 20px;
     right: 40px;
-    background: #333333;
+    background: #000000;
   }
   
-  .pacman__mouth {
+  &__mouth {
     background: #000;
     position: absolute;
     width: 100%;
@@ -45,47 +46,47 @@
 
 @keyframes pacman {
   0% {
-    left: 0;
     top: 0;
+    left: 0;
   }
-  10% {
-    left: calc(100% - 100px);
+  12% {
     top: 0;
+    left: calc(100% - 100px);
     transform: rotate(90deg);
   }
-  20% {
+  24% {
+    top: 200px;
     left: calc(100% - 100px);
-    top: 175px;
-    transform: rotate(180deg); 
-  }
-  30% {
-    left: 0;
-    top: 175px;
-    transform: rotate(90deg);
-  }
-  40% {
-    left: 0;
-    top: 350px;
-    transform: rotate(0deg);
-  }
-  60% {
-    left: calc(100% - 100px);
-    top: 350px;
-    transform: rotate(90deg);
-  }
-  70% {
-    left: calc(100% - 100px);
-    top: calc(100% - 130px);
     transform: rotate(180deg);
   }
-  80% {
+  36% {
+    top: 200px;
     left: 0;
-    top: calc(100% - 130px);
+    transform: rotate(90deg);
+  }
+  48% {
+    top: 400px;
+    left: 0;
+    transform: rotate(0deg);
+  }
+  70% {
+    top: 400px;
+    left: calc(100% - 100px);
+    transform: rotate(90deg);
+  }
+  82% {
+    top: 550px;
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+  }
+  90% {
+    top: 550px;
+    left: 0;
     transform: rotate(360deg);
   }
   100% {
-    left: 0;
     top: 0;
+    left: 0;
   }
 }
 

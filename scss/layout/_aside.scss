@@ -1,6 +1,6 @@
 .sidebar {
   width: $sidebar-width;
-  background-color: pink;
+  background-color: rgb(164, 4, 30);
   li {
     padding: 10px;
     border: 2px solid rgb(149, 149, 149);
@@ -26,10 +26,11 @@
 }
 
 .btn__aside--2:hover, 
-.btn__aside--2:focus li {
-  background-color: #fff;
-  box-shadow: rgba($color: #000000, $alpha: 0.1);
-  border-left: orange solid 8px;
+.btn__aside--2:focus 
+  li {
+    background-color: #fff;
+    box-shadow: rgba($color: #000000, $alpha: 0.1);
+    border-left: orange solid 8px;
 }
 
 .btn__aside--2:active {
