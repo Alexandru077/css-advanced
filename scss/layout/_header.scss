@@ -58,3 +58,16 @@
     }
   }
 }
+
+
+.resolution__button {
+  opacity: 0.6;
+}
+
+.resolution__input--mobile:checked ~ .resolution__button-mobile,
+.resolution__input--tablet:checked ~ .resolution__button-tablet,
+.resolution__input--laptop:checked ~ .resolution__button-laptop,
+.resolution__input--desktop:checked ~ .resolution__button-desktop {
+  opacity: 1;
+}
+

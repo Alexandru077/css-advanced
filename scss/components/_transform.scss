@@ -3,12 +3,29 @@ body {
   background: #a7a7a7;
 }
 
+.section__desandro {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: rgb(119, 0, 255);
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
 .desandro__box {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 // Desandro Carousel
+
+.carousel__orientation {
+  margin-bottom: 100px;
+}
+
 .carousel-box {
   text-align: center;
 }
@@ -21,6 +38,8 @@ body {
   height: 140px;
   margin: 80px auto;
   perspective: 1000px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .carousel {
@@ -68,7 +87,8 @@ body {
 .carousel__cell:nth-child(9n+7) { 
   background: hsla(240, 100%, 50%, 0.8); 
 }
-.carousel__cell:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); 
+.carousel__cell:nth-child(9n+8) { 
+  background: hsla(280, 100%, 50%, 0.8); 
 }
 .carousel__cell:nth-child(9n+0) { 
   background: hsla(320, 100%, 50%, 0.8); 
@@ -108,12 +128,11 @@ body {
   text-align: center;
   position: relative;
   z-index: 2;
-  background: hsla(0, 0%, 100%, 0.8);
+  background: hsla(0, 0%, 100%);
 }
 
 
 // Desandro Cube
-
 
 .scene__cube {
   width: 200px;
@@ -121,6 +140,8 @@ body {
   border: 1px solid black;
   perspective: 400px;
   background: rgb(172, 199, 205);
+  margin-left: calc(50% - 100px);
+  margin-top: 150px;
 }
 
 .cube {
@@ -237,17 +258,27 @@ body {
   transform: rotateX(-90deg) translateZ(100px);
 }
 
-label { 
-  margin-right: 10px;
+.radio-group {
+  margin-left: calc(50% - 250px);
+  margin-top: 70px;
+  margin-bottom: 150px;
+
+  label {
+    margin-right: 20px;
+  }
 }
 
 // Desandro Card
+
 .scene__card {
   width: 200px;
   height: 260px;
   border: 5px solid black;
   perspective: 600px;
   background-color: #40ff00;
+  margin-left: calc(50% - 100px);
+  margin-top: 160px;
+  margin-bottom: 180px;
 }
 
 .card {
