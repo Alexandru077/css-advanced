@@ -1,104 +1,134 @@
 .sidebar {
   width: $sidebar-width;
   background-color: rgb(255, 255, 255);
-  a {
-    padding: 10px;
-    border: 2px solid rgb(149, 149, 149);
-    display: flex;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  
+  li {
+    border-left: 8px solid transparent;
+
+    a {
+      padding: 10px;
+      border-top: 2px solid #919191;
+      display: flex;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: 700;
+    }
   }
 }
 
+.dropdown__button {
+  color: #000;
+  font-weight: 700;
+  border-top: 2px solid #919191;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  svg {
+    transform: rotate(-90deg);
+  }
+}
+
+
+.dropdown__button:hover,
+.dropdown__button:focus {
+  box-shadow: rgba($color: #000000, $alpha: 0.1);
+  border-left: orange solid -8px;
+}
+.dropdown__button:active {
+  box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
+  transform: translateY(1px);
+}
+
+.dropdown__content {
+  display: none;
+}
+
+.dropdown__input {
+  &:checked ~ .dropdown__content {
+    display: block;
+  }
+}
+
+
 .btn__aside--1:hover, 
 .btn__aside--1:focus li {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: 0.1);
   border-left: orange solid 8px;
 }
 
 .btn__aside--1:active {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
   transform: translateY(1px);
 }
 
 .btn__aside--2:hover, 
-.btn__aside--2:focus 
-  li {
-    background-color: #fff;
-    box-shadow: rgba($color: #000000, $alpha: 0.1);
-    border-left: orange solid 8px;
+.btn__aside--2:focus li {
+  box-shadow: rgba($color: #000000, $alpha: 0.1);
+  border-left: orange solid 8px;
 }
 
 .btn__aside--2:active {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
   transform: translateY(1px);
 }
 
 .btn__aside--3:hover, 
 .btn__aside--3:focus li {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: 0.1);
   border-left: orange solid 8px;
 }
 
 
 .btn__aside--3:active {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
   transform: translateY(1px);
 }
 
 .btn__aside--4:hover, 
 .btn__aside--4:focus li {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: 0.1);
   border-left: orange solid 8px;
 }
 
 .btn__aside--4:active {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
   transform: translateY(1px);
 }
 
 .btn__aside--5:hover, 
 .btn__aside--5:focus li {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: 0.1);
   border-left: orange solid 8px;
 }
 
 .btn__aside--5:active {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
   transform: translateY(1px);
 }
 
 .btn__aside--6:hover, 
 .btn__aside--6:focus li {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: 0.1);
   border-left: orange solid 8px;
 }
 
 .btn__aside--6:active {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
   transform: translateY(1px);
 }
 
+.btn__aside--7 {
+  border-bottom: 2px solid #919191;
+}
 .btn__aside--7:hover, 
 .btn__aside--7:focus li {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: 0.1);
   border-left: orange solid 8px;
 }
 
 .btn__aside--7:active {
-  background-color: #fff;
   box-shadow: rgba($color: #000000, $alpha: .06) 0 2px 4px;
   transform: translateY(1px);
 }

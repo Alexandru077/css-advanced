@@ -15,15 +15,11 @@ body {
   }
 }
 
-.desandro__box {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 
 // Desandro Carousel
 
 .carousel__orientation {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .carousel-box {
@@ -38,8 +34,6 @@ body {
   height: 140px;
   margin: 80px auto;
   perspective: 1000px;
-  margin-top: 150px;
-  margin-bottom: 150px;
 }
 
 .carousel {
@@ -99,12 +93,13 @@ body {
   transform: rotateY(320deg) translateZ(288px);
 }
 
-.carousel-options {
+.carousel-option {
   text-align: center;
   position: relative;
   z-index: 2;
   background: hsla(0, 0%, 100%);
 }
+
 
 // Desandro Cube
 
