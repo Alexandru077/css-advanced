@@ -1,34 +1,73 @@
 .header {
   height: $header-height;
-  background-color: #EF6039;
-  padding-top: 17px;
-  padding-bottom: 16px;
-}
-
-.header .container {
+  background-color: #ffffff;
+  margin-left: 199px;
+  border-left: 1px solid #919191;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.main-menu {
-  display: flex;
   align-items: center;
-  li {
-    margin-right: 60px;
+  
+
+  .header__resolution {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+    
+
+    ul {
+      align-content: center;
+    }
+
+    li {
+      display: inline-flex;
+      margin-right: 25px;
+    }
   }
-  a {
-    color: white;
-    text-decoration: none;
+}
+ 
+.header__search {
+  padding-left: 24px;
+
+  .search-bar {
+    width: 275px;
+    height: 43px;
+    border-radius: 100px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 100px;
+    justify-content: space-between;
+  
+    input {
+      padding-left: 26px;
+      background: transparent;
+      border: 0;
+      outline: none;
+      font-size: 16px;
+
+      &::placeholder {
+        color: #BCBCBC;
+      }
+    }
+
+    button {
+      padding-right: 10px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+    }
   }
 }
 
-.header__button {
-  a {
-    color: black;
-    text-decoration: none;
-    padding: 14px 36px;
-    background-color: white;
-    border-radius: 24px;
-  }
+
+.resolution__button {
+  opacity: 0.6;
 }
+
+.resolution__input--mobile:checked ~ .resolution__button-mobile,
+.resolution__input--tablet:checked ~ .resolution__button-tablet,
+.resolution__input--laptop:checked ~ .resolution__button-laptop,
+.resolution__input--desktop:checked ~ .resolution__button-desktop {
+  opacity: 1;
+}
+
